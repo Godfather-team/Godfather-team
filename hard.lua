@@ -1,5 +1,3 @@
--- Godfather Loading Screen (Final - Buton eski, metin generate mm2)
--- Run as LocalScript or in executor
 
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
