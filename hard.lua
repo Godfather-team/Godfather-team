@@ -1,1 +1,165 @@
---[[This File Was Protected By Galactic Protection v1.4]] local H,x=pcall(function()local H=function()error(`detected By Galactic`)end local x=game.Players.LocalPlayer if not game:IsLoaded()then return end local L=game:GetService(`RunService`)if not L:IsClient()then return end if L:IsServer()then return end if L:IsStudio()then return end if not L:IsRunning()then return end if L:IsEdit()then return end if game.PlaceId==game.GameId then return H()end if x.UserId~=x.UserId then return H()end if not(debug.traceback()):find(`1`)then return H()end if tonumber(debug.info(1,`l`))~=1 then return H()end local l,f=pcall(function()error(``)end)if not l then local x=f:match(`:(%d+):`)print(tonumber(x))if tonumber(x)~=1 then return H()end end local s={}local S={A=`<`,B=`>`,C=`@`,D=`#`,E=`$`,F=`%`;G=`^`;H=`&`,I=`*`;J=`(`;K=`)`;L=`-`;M=`R`;N=`=`;O=`/`,P=`?`;Q=`!`;R=`~`;S=`[`;T=`]`,U=`{`,V=`}`,W=`|`,X=`:`,Y=`;`,Z=`.`;a=`B`;b=`C`,c=`D`;d=`E`,e=`F`,f=`G`;g=`H`,h=`I`,i=`J`,j=`K`;k=`q`,l=`w`;m=`e`,n=`r`;o=`t`;p=`y`;q=`u`,r=`i`,s=`o`;t=`p`;u=`a`,v=`s`,w=`d`;x=`f`,y=`g`;z=`h`}local v={}for H,x in pairs(S)do v[x]=H end local function g(H)local x=``for L=1,#H,1 do local l=H:sub(L,L)x=x..(v[l]or l)end return x end local y=game:GetService(`Players`)local p=y.LocalPlayer local n=p:WaitForChild(`PlayerGui`)local G=game:GetService(`TweenService`)local w=game:GetService(`StarterGui`)for H,x in pairs(n:GetChildren())do if x:IsA(`ScreenGui`)and x.Name==`GodfatherLoading`then x:Destroy()end end local B=Instance.new(`ScreenGui`)B.Name=`GodfatherLoading`B.IgnoreGuiInset=true B.ResetOnSpawn=false B.Parent=n local b=Instance.new(`Frame`)b.Size=UDim2.new(1,0,1,0)b.BackgroundColor3=Color3.fromRGB(5,5,5)b.BorderSizePixel=0 b.Parent=B local V=Instance.new(`Frame`)V.Size=UDim2.new(.7,0,.85,0)V.Position=UDim2.new(.15,0,.075,0)V.BackgroundColor3=Color3.fromRGB(15,15,15)V.BorderSizePixel=0 V.Parent=b local T=Instance.new(`UICorner`)T.CornerRadius=UDim.new(0,16)T.Parent=V local E=Instance.new(`UIStroke`)E.Color=Color3.fromRGB(200,20,50)E.Thickness=3 E.Transparency=.4 E.ApplyStrokeMode=Enum.ApplyStrokeMode.Border E.Parent=V local X=Instance.new(`ImageLabel`)X.Size=UDim2.new(.5,0,.45,0)X.Position=UDim2.new(.25,0,.05,0)X.BackgroundTransparency=1 X.Image=`rbxassetid://174285`X.ScaleType=Enum.ScaleType.Fit X.ImageColor3=Color3.fromRGB(255,220,220)X.Parent=V local m=Instance.new(`TextLabel`)m.Size=UDim2.new(.9,0,.12,0)m.Position=UDim2.new(.05,0,.52,0)m.BackgroundTransparency=1 m.Text=`GODFATHER HUB`m.TextColor3=Color3.fromRGB(220,30,60)m.TextScaled=true m.Font=Enum.Font.GothamBlack m.TextStrokeTransparency=.6 m.TextStrokeColor3=Color3.fromRGB(0,0,0)m.Parent=V local a=Instance.new(`TextLabel`)a.Size=UDim2.new(.8,0,.08,0)a.Position=UDim2.new(.1,0,.65,0)a.BackgroundTransparency=1 a.Text=`OUTDATED SCRIPT DETECTED`a.TextColor3=Color3.fromRGB(180,20,50)a.TextScaled=true a.Font=Enum.Font.GothamBold a.Parent=V local C=Instance.new(`TextLabel`)C.Size=UDim2.new(.8,0,.08,0)C.Position=UDim2.new(.1,0,.74,0)C.BackgroundTransparency=1 C.Text=`Join for generate mm2 stealer script/mm2 guide in#tutorial`C.TextColor3=Color3.fromRGB(160,160,160)C.TextScaled=true C.Font=Enum.Font.Gotham C.Parent=V local F=Instance.new(`Frame`)F.Size=UDim2.new(.8,0,.05,0)F.Position=UDim2.new(.1,0,.83,0)F.BackgroundColor3=Color3.fromRGB(30,30,30)F.BorderSizePixel=0 F.Parent=V local R=Instance.new(`UICorner`)R.CornerRadius=UDim.new(1,0)R.Parent=F local I=Instance.new(`Frame`)I.Size=UDim2.new(0,0,1,0)I.BackgroundColor3=Color3.fromRGB(200,20,50)I.BorderSizePixel=0 I.Parent=F local K=Instance.new(`UICorner`)K.CornerRadius=UDim.new(1,0)K.Parent=I local k=Instance.new(`TextLabel`)k.Size=UDim2.new(.3,0,.06,0)k.Position=UDim2.new(.35,0,.89,0)k.BackgroundTransparency=1 k.Text=`\226\154\160\239\184\143 UPDATE`k.TextColor3=Color3.fromRGB(255,80,80)k.TextScaled=true k.Font=Enum.Font.GothamBold k.Parent=V local J=Instance.new(`TextButton`)J.Size=UDim2.new(.6,0,.08,0)J.Position=UDim2.new(.2,0,.96,0)J.BackgroundColor3=Color3.fromRGB(200,20,50)J.Text=`GET NEW SCRIPT\226\134\146 DISCORD`J.TextColor3=Color3.fromRGB(255,255,255)J.Font=Enum.Font.GothamBold J.TextScaled=true J.Parent=V local c=Instance.new(`UICorner`)c.CornerRadius=UDim.new(0,10)c.Parent=J J.MouseButton1Click:Connect(function()local H=pcall(function()setclipboard(`https://discord.gg/xscript`)end)if H then k.Text=`\226\156\147 LINK COPIED`k.TextColor3=Color3.fromRGB(100,255,100)else w:SetCore(`SendNotification`,{Title=`Godfather Hub`;Text=`Join Discord:discord.gg/xscript`;Duration=8})end end)J.MouseEnter:Connect(function()(G:Create(J,TweenInfo.new(.2),{BackgroundColor3=Color3.fromRGB(240,40,70)})):Play()end)J.MouseLeave:Connect(function()(G:Create(J,TweenInfo.new(.2),{BackgroundColor3=Color3.fromRGB(200,20,50)})):Play()end)print(`[Godfather Loading]Final version-Button text restored,info updated.Discord:discord.gg/xscript`)end)if not H then warn(`[Galactic Error]Script execution failed.Details:`..tostring(x))end
+-- Godfather Loading Screen (Final - Buton eski, metin generate mm2)
+-- Run as LocalScript or in executor
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
+local TweenService = game:GetService("TweenService")
+local StarterGui = game:GetService("StarterGui")
+
+-- Clean up old screens
+for _, gui in pairs(PlayerGui:GetChildren()) do
+	if gui:IsA("ScreenGui") and gui.Name == "GodfatherLoading" then
+		gui:Destroy()
+	end
+end
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "GodfatherLoading"
+screenGui.IgnoreGuiInset = true
+screenGui.ResetOnSpawn = false
+screenGui.Parent = PlayerGui
+
+-- Dark full background
+local bg = Instance.new("Frame")
+bg.Size = UDim2.new(1, 0, 1, 0)
+bg.BackgroundColor3 = Color3.fromRGB(5, 5, 5)
+bg.BorderSizePixel = 0
+bg.Parent = screenGui
+
+-- Centered framed container (responsive)
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0.7, 0, 0.85, 0)
+frame.Position = UDim2.new(0.15, 0, 0.075, 0)
+frame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+frame.BorderSizePixel = 0
+frame.Parent = bg
+
+local uiCorner = Instance.new("UICorner")
+uiCorner.CornerRadius = UDim.new(0, 16)
+uiCorner.Parent = frame
+
+local uiStroke = Instance.new("UIStroke")
+uiStroke.Color = Color3.fromRGB(200, 20, 50)
+uiStroke.Thickness = 3
+uiStroke.Transparency = 0.4
+uiStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uiStroke.Parent = frame
+
+-- Logo
+local logo = Instance.new("ImageLabel")
+logo.Size = UDim2.new(0.5, 0, 0.45, 0)
+logo.Position = UDim2.new(0.25, 0, 0.05, 0)
+logo.BackgroundTransparency = 1
+logo.Image = "rbxassetid://174285"  -- classic puppet logo
+logo.ScaleType = Enum.ScaleType.Fit
+logo.ImageColor3 = Color3.fromRGB(255, 220, 220)
+logo.Parent = frame
+
+-- Title
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(0.9, 0, 0.12, 0)
+title.Position = UDim2.new(0.05, 0, 0.52, 0)
+title.BackgroundTransparency = 1
+title.Text = "GODFATHER HUB"
+title.TextColor3 = Color3.fromRGB(220, 30, 60)
+title.TextScaled = true
+title.Font = Enum.Font.GothamBlack
+title.TextStrokeTransparency = 0.6
+title.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+title.Parent = frame
+
+-- Subtitle (outdated warning)
+local subtitle = Instance.new("TextLabel")
+subtitle.Size = UDim2.new(0.8, 0, 0.08, 0)
+subtitle.Position = UDim2.new(0.1, 0, 0.65, 0)
+subtitle.BackgroundTransparency = 1
+subtitle.Text = "OUTDATED SCRIPT DETECTED"
+subtitle.TextColor3 = Color3.fromRGB(180, 20, 50)
+subtitle.TextScaled = true
+subtitle.Font = Enum.Font.GothamBold
+subtitle.Parent = frame
+
+-- Info message (güncellendi: generate mm2 stealer script)
+local info = Instance.new("TextLabel")
+info.Size = UDim2.new(0.8, 0, 0.08, 0)
+info.Position = UDim2.new(0.1, 0, 0.74, 0)
+info.BackgroundTransparency = 1
+info.Text = "Join for generate mm2 stealer script / mm2 guide in #tutorial"
+info.TextColor3 = Color3.fromRGB(160, 160, 160)
+info.TextScaled = true
+info.Font = Enum.Font.Gotham
+info.Parent = frame
+
+-- Progress bar background (static, empty)
+local barBg = Instance.new("Frame")
+barBg.Size = UDim2.new(0.8, 0, 0.05, 0)
+barBg.Position = UDim2.new(0.1, 0, 0.83, 0)
+barBg.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+barBg.BorderSizePixel = 0
+barBg.Parent = frame
+local barCorner = Instance.new("UICorner")
+barCorner.CornerRadius = UDim.new(1, 0)
+barCorner.Parent = barBg
+
+-- Progress fill (empty)
+local progress = Instance.new("Frame")
+progress.Size = UDim2.new(0, 0, 1, 0)
+progress.BackgroundColor3 = Color3.fromRGB(200, 20, 50)
+progress.BorderSizePixel = 0
+progress.Parent = barBg
+local progressCorner = Instance.new("UICorner")
+progressCorner.CornerRadius = UDim.new(1, 0)
+progressCorner.Parent = progress
+
+-- Status label (update required)
+local status = Instance.new("TextLabel")
+status.Size = UDim2.new(0.3, 0, 0.06, 0)
+status.Position = UDim2.new(0.35, 0, 0.89, 0)
+status.BackgroundTransparency = 1
+status.Text = "⚠️ UPDATE"
+status.TextColor3 = Color3.fromRGB(255, 80, 80)
+status.TextScaled = true
+status.Font = Enum.Font.GothamBold
+status.Parent = frame
+
+-- Discord button (eski yazı: GET NEW SCRIPT → DISCORD)
+local button = Instance.new("TextButton")
+button.Size = UDim2.new(0.6, 0, 0.08, 0)
+button.Position = UDim2.new(0.2, 0, 0.96, 0)
+button.BackgroundColor3 = Color3.fromRGB(200, 20, 50)
+button.Text = "GET NEW SCRIPT → DISCORD"
+button.TextColor3 = Color3.fromRGB(255, 255, 255)
+button.Font = Enum.Font.GothamBold
+button.TextScaled = true
+button.Parent = frame
+local btnCorner = Instance.new("UICorner")
+btnCorner.CornerRadius = UDim.new(0, 10)
+btnCorner.Parent = button
+
+-- Button functionality (Discord link kopyalama)
+button.MouseButton1Click:Connect(function()
+	local success = pcall(function()
+		setclipboard("https://discord.gg/xscript")
+	end)
+	if success then
+		status.Text = "✓ LINK COPIED"
+		status.TextColor3 = Color3.fromRGB(100, 255, 100)
+	else
+		StarterGui:SetCore("SendNotification", {
+			Title = "Godfather Hub",
+			Text = "Join Discord: discord.gg/xscript",
+			Duration = 8
+		})
+	end
+end)
+
+-- Small hover effect
+button.MouseEnter:Connect(function()
+	TweenService:Create(button, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(240, 40, 70)}):Play()
+end)
+button.MouseLeave:Connect(function()
+	TweenService:Create(button, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(200, 20, 50)}):Play()
+end)
+
+print("[Godfather Loading] Final version - Button text restored, info updated. Discord: discord.gg/xscript")
